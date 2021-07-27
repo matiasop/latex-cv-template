@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[margin=1.25in]{geometry}
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\Large\bfseries}
+{\hspace{-.25in}$\bullet$}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\renewcommand{\maketitle}{
+\begin{center}
+    {\huge\bfseries
+    \theauthor}
+
+    \vspace{.25em}
+
+    \href{mailto:me@example.com}{\nolinkurl{me@example.com}}
+
+    \vspace{.25em}
+
+    \href{https://github.com/}{\nolinkurl{github.com/[username]}}
+
+    \vspace{.25em}
+    
+    +123 12345678
+
+
+
+\end{center}
+}
+
+\begin{document}
+
+\title{Curriculum Vitae}
+\author{Author Name}
+
+\maketitle
+
+\section{Technical Skills}
+
+\subsection{Programming Languages}
+
+JavaScript, Python, Ruby
+
+\subsection{Frameworks}
+
+React.js, Next.js, React Native, Django, Ruby on Rails
+
+\section{General Skills}
+
+\subsection{Languages}
+
+English, spanish
+
+\section{Education}
+
+Degree in x from x University
+
+\section{Job Experience}
+
+Worked in x
+
+\end{document}
